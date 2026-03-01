@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <meta http-equiv="refresh" content="5">
+</head>
+<body>
+    <h2>Panel de Monitoreo</h2>
+
+    <p>Uso de CPU: {{ cpu }}%</p>
+    <p>Uso de Memoria: {{ memory }}%</p>
+
+    {% if alert %}
+        <p style="color:red;">{{ alert }}</p>
+    {% endif %}
+
+    <br>
+    <a href="/logout">Cerrar sesión</a>
+</body>
+</html>
